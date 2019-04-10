@@ -1,0 +1,21 @@
+.container-fluid{
+    margin:0 ! important;
+    padding:0 ! important;
+    }
+
+.header{
+    background-repeat: no-repeat;
+    height: 950px;
+}
+
+
+.row{
+    margin:0 ! important;
+    padding:0 ! important; 
+}
+
+@media screen and (max-width:480px) {  
+    .imageSelector {
+      display: none;
+    }
+}
