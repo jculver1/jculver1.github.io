@@ -5,7 +5,11 @@
 
 .header{
     background-repeat: no-repeat;
-    height: 950px;
+    height: 900px;
+
+    img {
+        border-radius: 50%;
+      }
 }
 
 
@@ -14,8 +18,23 @@
     padding:0 ! important; 
 }
 
-@media screen and (max-width:480px) {  
+@media screen and (max-width:700px) {  
     .imageSelector {
       display: none;
     }
 }
+.left-half{
+    height: 100%;
+    background-color: #BA5C12;
+    display: flex;
+    justify-content: center;
+}
+
+.right-half{
+    height: 100%;
+}
+
+
+// *{
+//     border: solid red 1px;
+// }
