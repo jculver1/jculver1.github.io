@@ -1,3 +1,22 @@
-<div class='projects_container'>
-<h1>projects</h1>
+<div class='row'>
+  <h1>Projects</h1>
+</div>
+<div class='row projects_container'>
+    <div id="f1_container" *ngFor="let project of projects">
+        <div id="f1_card" class="shadow">
+            <div class="front face">
+                <img src='{{project.img}}'/>
+            </div>
+            <div class="back face center">
+                <h1>{{project.name}}</h1>
+                <h3>Description:</h3>
+                <p>{{project.description}}</p>
+                <h3>Tech used:</h3>
+                <ul>
+                    <li>{{project.tech}} </li>
+                </ul>
+                <a href="{{project.github}}">Visit the github repo!</a>
+            </div>
+        </div>
+    </div>
 </div>
