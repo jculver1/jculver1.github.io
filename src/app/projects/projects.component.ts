@@ -8,7 +8,16 @@ import {NgbCollapse} from '@ng-bootstrap/ng-bootstrap';
 
 })
 export class ProjectsComponent implements OnInit {
-  public isCollapsed = false;
+  
+  isCollapsed:boolean = false;
+
+  selectId:number = 0
+
+  toggleCollapse(id){
+    this.selectId = id 
+    !this.isCollapsed 
+  }
+
   constructor() { }
 
   projects:object[] = [

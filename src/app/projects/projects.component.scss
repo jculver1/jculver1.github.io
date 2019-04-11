@@ -19,4 +19,21 @@
 .right-half{
     margin:0 ! important;
     padding:0 ! important; 
+    img{
+        height: 100%;
+        width: 50%;
+    }
+}
+
+.card{
+    margin-right: 10px;
+    font-size: 100px;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    color: red;
+    border: solid 5px black;
 }
