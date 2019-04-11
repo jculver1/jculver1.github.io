@@ -3,20 +3,25 @@
             <h1>Projects</h1>
         </div>
         <div class='col right-half'>
-       
-                <p>
-                        <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
-                                [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-                          Toggle
-                        </button>
-                      </p>
-                      <div id="collapseExample" [ngbCollapse]="isCollapsed">
-                        <div class="card">
-                          <div class="card-body">
-                            You can collapse this card by clicking Toggle
-                          </div>
+                <div class="card" style="width: 18rem;" *ngFor="let project of projects">
+                        <img class="card-img-top" src="{{project.img}}" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">{{project.name}}</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p>
+                            <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+                                    [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                                    Toggle
+                            </button>
+                            </p>
                         </div>
-                      </div>
-
+                        <div id="collapseExample" [ngbCollapse]="isCollapsed">
+                            <div class="card">
+                                <div class="card-body">
+                                    You can collapse this card by clicking Toggle
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </div>
