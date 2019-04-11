@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-
+import { Component, OnInit} from '@angular/core';
+import {NgbCollapse} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-projects',
@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 })
 export class ProjectsComponent implements OnInit {
-
+  public isCollapsed = false;
   constructor() { }
 
   projects:object[] = [

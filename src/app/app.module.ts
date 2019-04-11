@@ -8,6 +8,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NavComponent } from './nav/nav.component';
 import { ContactComponent } from './contact/contact.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -23,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
