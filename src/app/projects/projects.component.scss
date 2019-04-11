@@ -30,6 +30,11 @@
     font-size: 100px;
 }
 
+.carousel-container{
+    width: 100px;
+    color: red;
+}
+
 .carousel-caption {
     position: relative;
     left: auto;
@@ -37,3 +42,18 @@
     color: red;
     border: solid 5px black;
 }
+
+img{
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.carousel-control-prev-icon{
+    background-image: url('https://apufpel.com.br/assets/img/seta_prim.png')
+ }
+ .carousel-control-next-icon{
+   background-image: url('https://apufpel.com.br/assets/img/seta_ult.png')
+ }
+
+
