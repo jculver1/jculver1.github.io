@@ -9,6 +9,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NavComponent } from './nav/nav.component';
 import { ContactComponent } from './contact/contact.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { ContactComponent } from './contact/contact.component';
     SkillsComponent,
     ProjectsComponent,
     NavComponent,
-    ContactComponent
+    ContactComponent,
+
   ],
   imports: [
     BrowserModule,
