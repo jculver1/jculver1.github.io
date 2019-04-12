@@ -8,6 +8,13 @@
 .left-half{
     margin:0 ! important;
     padding:0 ! important; 
+    font-family: 'Fascinate Inline', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 60px;
+    }
 }
 
 .right-half{
