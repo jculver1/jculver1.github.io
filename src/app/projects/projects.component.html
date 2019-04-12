@@ -6,26 +6,33 @@
            <div class='row'>
                 <div class='col-2'></div>
                 <div class='col-8'>
-
                     <div class='carousel'>
-                            <div class='header'>
-                                <div class='arrowLeft'></div>
-                                <div class='img-container'>
-                                    <img src="{{projects[counter].img}}" alt="project photo">
-                                </div>
-                                <div class='arrowRight' (click)="nextSlide()"></div>
+                            <div class='header row'>
+                                <div class="col-2"></div>
+                                    <div class='img-container col-8'>
+                                        <img src="{{projects[counter].img}}" alt="project photo">
+                                    </div>
+                                    <div class="col-2"></div>
                             </div>
-                            <div class='body'> 
-                                <h2>{{projects[counter].name}}</h2>
-                                <p>{{projects[counter].description}}</p>
-                                <h5>The tech involved:</h5>
-                                <ul *ngFor='let item of projects[counter].tech'>
-                                    <li>{{item}}</li>
-                                </ul>
-                                <a href="{{project[counter].github}}">Checkout the code on GitHub!</a>
+                            <div class='row'></div>
+                            <div class='body row'> 
+                                <div class="col-2">
+                                    <div class='arrowLeft'></div>
+                                </div>
+                                <div class="col-8 body-col">
+                                    <h2>{{projects[counter].name}}</h2>
+                                    <p>{{projects[counter].description}}</p>
+                                    <h5>The tech involved:</h5>
+                                    <ul *ngFor='let item of projects[counter].tech'>
+                                        <li>{{item}}</li>
+                                    </ul>
+                                    <a href="{{project[counter].github}}">Checkout the code on GitHub!</a>
+                                </div>
+                                <div class="col-2">
+                                    <div class='arrowRight' (click)="nextSlide()"></div>
+                                </div>
                             </div>
                     </div>
-
                 </div>
 
                     <!-- <carousel>
