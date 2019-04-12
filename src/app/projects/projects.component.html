@@ -7,13 +7,18 @@
                 <div class='col-2'></div>
                 <div class='col-8'>
 
-                    <div class='carousel' >
+                    <div class='carousel'>
                             <div class='header'>
-                            <img src="{{projects[counter].img}}" alt="project photo">
+                                <div class='arrowLeft'></div>
+                                <div class='img-container'>
+                                    <img src="{{projects[counter].img}}" alt="project photo">
+                                </div>
+                                <div class='arrowRight' (click)="nextSlide()"></div>
                             </div>
                             <div class='body'> 
                                 <h2>{{projects[counter].name}}</h2>
                                 <p>{{projects[counter].description}}</p>
+                                <h5>The tech involved:</h5>
                                 <ul *ngFor='let item of projects[counter].tech'>
                                     <li>{{item}}</li>
                                 </ul>
