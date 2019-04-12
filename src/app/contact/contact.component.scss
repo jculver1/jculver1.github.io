@@ -1,0 +1,25 @@
+.contact_container{
+    height: 900px;
+
+
+
+    .left-half{
+        background-color: #218380;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .right-half{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Fascinate Inline', cursive;
+
+        h1{
+            font-size: 80px;
+        }
+    }    
+}
