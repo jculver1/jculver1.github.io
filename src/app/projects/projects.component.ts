@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import {NgbCollapse} from '@ng-bootstrap/ng-bootstrap';
+import { projection } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-projects',
@@ -13,9 +14,19 @@ export class ProjectsComponent implements OnInit {
 
   selectId:number = 0
 
+  counter:number = 0
+
   toggleCollapse(id){
     this.selectId = id 
     !this.isCollapsed 
+  }
+
+  nextSlide(){
+    if(this.counter < this.projects.length){
+      this.counter++ 
+    }else{
+      this.counter = 0
+    }
   }
 
   constructor() { }
