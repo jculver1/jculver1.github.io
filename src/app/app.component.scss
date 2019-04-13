@@ -47,12 +47,25 @@
     }
 }
 
-// projects{
-//     height: 1000px;
-//     background-color: #FEF0DB;
-// }
 #projects{
     margin:0 ! important;
     padding:0 ! important;
+}
+
+
+.linkbox{
+    display:flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 100%;
+    width: 40%;
+}   
+
+a {
+    color: black
+  }
+
+a:hover{
+    color:  #218380;
 }
 
