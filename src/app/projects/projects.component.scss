@@ -128,10 +128,12 @@
             
             h2{
                 font-family: 'Fascinate Inline', cursive;
+                font-size: 25px;    
             }
 
             h5{
                 font-family: 'Fascinate Inline', cursive;
+                font-size: 20px;
             }
 
             p{
@@ -151,8 +153,16 @@
 
     }
 
-    
 
+    ul{
+        list-style-type: none;
+    }
+
+    .tech_section{
+        display: flex;
+        justify-content: stretch;
+        align-content: stretch;
+    }
 
 // }
 

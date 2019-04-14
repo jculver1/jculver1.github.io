@@ -22,10 +22,12 @@
                                 <div class="col-8 body-col">
                                     <h2>{{projects[counter].name}}</h2>
                                     <p>{{projects[counter].description}}</p>
-                                    <h5>The tech involved:</h5>
+                                    <h5>The Tech</h5>
+                                    <div class='row tech_section'>
                                     <ul *ngFor='let item of projects[counter].tech'>
                                         <li>{{item}}</li>
                                     </ul>
+                                    </div>
                                     <a href="{{project[counter].github}}">Checkout the code on GitHub! </a>
                                 </div>
                                 <div class="col-2">
