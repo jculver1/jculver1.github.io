@@ -21,7 +21,6 @@ export class ProjectsComponent implements OnInit {
     }else{
       this.counter = 0
     }
-    console.log(this.counter)
   }
 
   backSlide(){
@@ -30,7 +29,6 @@ export class ProjectsComponent implements OnInit {
     }else{
       this.counter = this.projects.length -  1
     }
-    console.log(this.counter)
   }
 
   constructor() { }
