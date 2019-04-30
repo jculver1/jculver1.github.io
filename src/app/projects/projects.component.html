@@ -4,38 +4,36 @@
         </div>
         <div class='col right-half'>
            <div class='row'>
-                <div class='col-2'></div>
-                <div class='col-8'>
-                    <div class='carousel'>
-                            <div class='header'>
-                                <div class="col-2"></div>
-                                    <div class='img-container col-8'>
-                                        <img src="{{projects[counter].img}}" alt="project photo">
-                                    </div>
-                                    <div class="col-2"></div>
-                            </div>
-                            <div class='body row'> 
-                                <div class="col-2">
-                                    <div class='arrowLeft' (click)="backSlide()"></div>
-                                </div>
-                                <div class="col-8 body-col">
-                                    <h2>{{projects[counter].name}}</h2>
-                                    <p>{{projects[counter].description}}</p>
-                                    <h5 class='mt-3'>The Tech</h5>
-                                    <div class='row tech_section mb-4'>
-                                    <div *ngFor='let item of projects[counter].tech'>
-                                        <div class='pr-2'>{{item}}</div>
-                                    </div>
-                                    </div>
-                                    <a href="{{projects[counter].github}}">Checkout the code on GitHub!</a>
-                                </div>
-                                <div class="col-2">
-                                    <div class='arrowRight' (click)="nextSlide()"></div>
-                                </div>
-                            </div>
+                <div class='col-1'></div>
+                <div class='col-10'>
+                    <div class= 'invisible_header pb-5'>
+                        <h1>Projects</h1>
                     </div>
+                <div class='carousel row d-flex d-flex align-items-center'>
+                    <div class='arrowLeft col-1 nopadding' (click)="backSlide()"></div>
+                    <div class='extra_padding col-10'>
+                        <div class='header row d-flex justify-content-center'>
+                                <div class='d-flex justify-content-center'>
+                                    <img src="{{projects[counter].img}}" alt="project photo">
+                                </div>
+                        </div>
+                        <div class='body d-flex justify-content-center align-items-center'> 
+                                <h2>{{projects[counter].name}}</h2>
+                                <p>{{projects[counter].description}}</p>
+                                <h5>The Tech</h5>
+                                <div class='tech_section mb-4'>
+                                    <div  *ngFor='let item of projects[counter].tech'>
+                                        <div>{{item}}</div>
+                                    </div>
+                                </div>
+                        <!-- </div> -->
+                                    <div>
+                                    <a class="mb-2" href="{{projects[counter].github}}">Checkout the code on GitHub!</a>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class='arrowRight col-1 nopadding d-flex justify-content-center' (click)="nextSlide()"></div>
                 </div>
-                <div class='col-2'></div>
             </div>
         </div>
     </div>

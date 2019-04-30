@@ -3,7 +3,6 @@
     margin:0 ! important;
     padding:0 ! important; 
 }
-
   
 .left-half{
     margin:0 ! important;
@@ -14,7 +13,7 @@
     align-items: center;
     h1{
         font-size: 80px;
-    }
+    } 
     .icons{
         background-color: white;
     }
@@ -26,6 +25,20 @@
     }
 }
 
+@media screen and (min-width: 699px){
+    .invisible_header{
+        display: none;
+    }
+}
+.invisible_header{
+    display: flex;
+    justify-content: center;
+h1{
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 60px;  
+    color: white;
+    }
+}
 .right-half{
     margin:0 ! important;
     padding:0 ! important; 
@@ -37,151 +50,68 @@
 }
 
 .carousel{
-    border: solid black 5px; 
-    margin-top: 20px;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    border: solid 3px black;
+    background: white;
 
-    .header{
-        max-width: 100%;
-        max-height: 100%;
-        // display: flex;
-        // align-items: center;
-        // justify-content: space-between;
-        // align-content: space-between;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        align-self: center;
     }
-        .img-container{
-            margin-top: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
-            flex-direction: row;
-            min-width: 100%;
-            min-height: 100%;
-        }
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            min-width: 100%;
-            min-height: 100%;
-        }
-
-        .arrowRight{
-            width: 0; 
-            height: 0; 
-            border-top: 20px solid transparent;
-            border-bottom: 20px solid transparent;
-            border-left: 20px solid black;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-        .arrowRight:hover{
-            width: 0; 
-            height: 0; 
-            border-top: 20px solid transparent;
-            border-bottom: 20px solid transparent;
-            border-left: 20px solid #218380;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-        .arrowLeft{
-            width: 0; 
-            height: 0; 
-            border-top: 20px solid transparent;
-            border-bottom: 20px solid transparent; 
-            border-right:20px solid black; 
-            margin-right: 10px;
-            margin-left: 10px;
-            align-self: flex-start;
-        }
-
-        .arrowLeft:hover{
-            width: 0; 
-            height: 0; 
-            border-top: 20px solid transparent;
-            border-bottom: 20px solid transparent; 
-            border-right:20px solid #218380; 
-            margin-right: 10px;
-            margin-left: 10px;
-        }
+    .arrowLeft{
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent; 
+        border-right: 10px solid black; 
     }
+
+    .arrowRight{
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid black;
+    }
+
+    .nopadding {
+        padding: 0 !important;
+        margin: 0 !important;
+     }
+    
+
+    h2{
+        font-family: 'Fascinate Inline', cursive;
+        font-size: 25px;    
+            }
+
+    h5{
+        font-family: 'Fascinate Inline', cursive;
+        font-size: 20px;
+    }
+
+    p{
+        font-family: 'Kanit', sans-serif;
+        font-size: 15px;
+    }
+
+    a{
+        font-family: 'Kanit', sans-serif;
+        color: #218380;
+        font-size: 16px;
+    }
+    // .tech_section{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
 
     .body{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        margin-right: 5px;
-        margin-left: 5px;
-        margin-top: 30px;
-        
-        .col-2{
-            align-self: flex-start
-        }
-
-        .body-col{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            
-            h2{
-                font-family: 'Fascinate Inline', cursive;
-                font-size: 25px;    
-            }
-
-            h5{
-                font-family: 'Fascinate Inline', cursive;
-                font-size: 20px;
-            }
-
-            p{
-                font-family: 'Kanit', sans-serif;
-                font-size: 15px;
-            }
-
-            a{
-                font-family: 'Kanit', sans-serif;
-                color: #218380;
-                font-size: 16px;
-            }
-        
-        }
-
+        // display:flex;
+        flex-direction: column;
+        // justify-content: center;
     }
-
-.tech_section{
-    font-family: 'Kanit', sans-serif;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: space-between;
-    align-items: stretch;
-    font-size: 15px;
 }
-
-
-
-// .header{
-//     width: 50%;
-//     // img{
-//     //     width: 400px;
-//     // }
-// }
 
 
