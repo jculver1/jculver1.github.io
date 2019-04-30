@@ -13,7 +13,7 @@
                     <div class='arrowLeft col-1 nopadding' (click)="backSlide()"></div>
                     <div class='extra_padding col-10'>
                         <div class='header row d-flex justify-content-center'>
-                                <div class='d-flex justify-content-center my-2'>
+                                <div class='d-flex justify-content-center my-2 px-2'>
                                     <img src="{{projects[counter].img}}" alt="project photo">
                                 </div>
                         </div>
@@ -21,14 +21,14 @@
                                 <h2>{{projects[counter].name}}</h2>
                                 <p>{{projects[counter].description}}</p>
                                 <h5>The Tech</h5>
-                                <div class='tech_section mb-4'>
+                                <div class='tech_section mb-3'>
                                     <div  *ngFor='let item of projects[counter].tech'>
-                                        <div>{{item}}</div>
+                                        <div class='tech_name'>{{item}}</div>
                                     </div>
                                 </div>
                         <!-- </div> -->
-                                    <div>
-                                    <a class="mb-2" href="{{projects[counter].github}}">Checkout the code on GitHub!</a>
+                                    <div class="mb-3">
+                                    <a href="{{projects[counter].github}}">Checkout the code on GitHub!</a>
                                     </div>
                         </div>
                     </div>
