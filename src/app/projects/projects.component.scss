@@ -28,13 +28,13 @@ h1{
     }
 }
 
-@media screen and (max-width:700px) {  
+@media screen and (max-width:769px) {  
     .left-half {
         display: none;
     }
 }
 
-@media screen and (min-width: 699px){
+@media screen and (min-width: 768px){
     .invisible_header{
         display: none;
     }
